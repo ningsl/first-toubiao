@@ -62,7 +62,6 @@ toubiao\pageModel\ProjectPhoto.class
 toubiao\pageModel\TreeIdL.class
 toubiao\dao\impl\ResourceDaoImpl.class
 nsl\utils\file\FileUtils.class
-toubiao\dao\impl\CertificateDaoImpl.class
 toubiao\model\Trole.class
 toubiao\dao\impl\BaseDaoImpl.class
 toubiao\model\Course.class
@@ -87,7 +86,6 @@ toubiao\pageModel\User.class
 toubiao\service\impl\RoleServiceImpl.class
 nsl\utils\StringEscapeEditor.class
 toubiao\controller\DepartmentController.class
-toubiao\service\impl\CertificatePhotoImpl.class
 toubiao\model\Tphoto.class
 toubiao\dao\impl\StudentDaoImpl.class
 nsl\utils\BeanUtils.class

@@ -24,13 +24,16 @@ public class EasyUI133Utils {
 		String webClassName=ph.getWebClass().trim();
 		String webField=ph.getSort().trim();
 		String order=ph.getOrder();
+		WebClassField field=null;
 		
 		if(webClassName==null || webField==null || webClassName.equals("") || webField.equals(""))
 			return "";
 	
 		Map<String, WebClassField> fieldMap=Dictionary.WEB_CLASS.get(ph.getWebClass());
 		
-		WebClassField field=fieldMap.get(webField);
+		if(fieldMap!=null){
+			field=fieldMap.get(webField);
+		}
 		
 		//如果字典中未记录 webfield,以前台webClass   Field 
 		if(order==null || order.equals("")){

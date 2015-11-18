@@ -41,7 +41,7 @@
 			idField : 'id',
 			pageSize : 10,
 			pageList : [ 10, 20, 30, 40, 50 ],
-			sortName : 'designerName',
+			sortName : 'name',
 			sortOrder : 'asc', 
 			multiSort : true,
 			striped: true,
@@ -62,8 +62,8 @@
 					/* console.log(value);
 					console.log(index);
 					console.log(row); */
-					var projectId=row.id;
-					var designCode=row.designCode;
+					var designerId=row.id;
+					var name=row.name;
 					/* console.log(projectId); */
 					if(typeof(value) == "undefined" ){
 						value='';
@@ -99,17 +99,7 @@
 				width : 100,
 				sortable : true
 			},{
-				field : 'classByImportance',
-				title : '项目类型',
-				width : 75,
-				sortable : true
-			},{
-				field : 'beginDate',
-				title : '委托日期',
-				width : 75,
-				sortable : true
-			},{
-				field : 'department',
+				field : 'departmentName',
 				title : '所属部门',
 				width : 75,
 				sortable : true
@@ -160,7 +150,7 @@
 				console.log(param);
 				if(param.sort){
 					var options=$(this).datagrid('getColumnOption',param.sort);
-					param.webClass="project";
+					param.webClass="designer";
 					console.log(param);
 				}
 			}
@@ -260,12 +250,12 @@
 	
 	//增加详情显示页面
 	 function addDesignerDetailTab(designerId,name) {
-		parent.addProjectDetailTab(designerId,name);
+		parent.addDesignerDetailTab(designerId,name);
 	} 
 	
 	//增加新项目tab
-	 function addNewProjectTab() {
-		parent.addNewProjectTab();
+	 function addNewDesignerTab() {
+		parent.addNewDesignerTab();
 	} 
 	
 	//excle  docx 下载
@@ -356,8 +346,8 @@
 	//datagrid 筛选入口函数，结合filter 和   search	
 	function datagridQuery(){
 		var conditions=new Array();
-		var classField=$("#project-field").val()
-		var value=$("#project-field-value").val().trim();
+		var classField=$("#designer-field").val()
+		var value=$("#designer-field-value").val().trim();
 		
 		console.log(value);
 		console.log(filterConditions);
@@ -386,7 +376,7 @@
 	}
 
 	function removeSearch(){
-		$("#project-field-value").val('');
+		$("#designer-field-value").val('');
 		datagridQuery();
 	}
 
@@ -512,17 +502,16 @@ color: #f60;
 	</div>
 	<div id="toolbar" style="display: none;">
 		搜索项目：
-		<select id="project-field">
-			  <option value ="project.designCode" selected>设计编号</option>
-			  <option value ="project.projectName">业绩名称</option>
+		<select id="designer-field">
+			  <option value ="designer.name" selected>姓名</option>
 			  <option value="opel">Opel</option>
 			  <option value="audi">Audi</option>
 		</select>&nbsp;&nbsp;：
-		<input type="text" value="" id="project-field-value">
+		<input type="text" value="" id="designer-field-value">
 		<a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'brick_add',plain:true" onclick="datagridQuery();">搜索</a>
 		<a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'brick_delete',plain:true" onclick="removeSearch();">清空搜索</a>
 		<c:if test="${fn:contains(sessionInfo.resourceList, '/designerController/addDesigner')}">
-			<a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'brick_add',plain:true" onclick="addNewProjectTab();">添加项目</a>
+			<a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'brick_add',plain:true" onclick="addNewDesignerTab();">添加项目</a>
 		</c:if>
 		<c:if test="${fn:contains(sessionInfo.resourceList, '/designerController/deleteDesigner')}">
 			<a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'brick_delete',plain:true" onclick="batchDeleteFun();">删除勾选</a>
@@ -547,7 +536,7 @@ color: #f60;
 	<iframe id="downloadframe" style="display:none"></iframe>
 	<div id="menu" class="easyui-menu" style="width: 120px; display: none;">
 		<c:if test="${fn:contains(sessionInfo.resourceList, '/designerController/designerDetail')}">
-		<div onclick="projectDetail();" data-options="iconCls:'pencil'">详情</div>
+		<div onclick="designerDetail();" data-options="iconCls:'pencil'">详情</div>
 		</c:if>
 		<c:if test="${fn:contains(sessionInfo.resourceList, '/designerController/addDesigner')}">
 			<div onclick="addFun();" data-options="iconCls:'pencil_add'">增加</div>

@@ -45,7 +45,7 @@
 	
 	//添加edit designer  detail tabl
 	function addDesignerDetailTab(designerId,name) {
-		var url=webRootPath+"/designerController/designerDetail?projectId="+designerId;
+		var url=webRootPath+"/designerController/designerDetail?designerId="+designerId;
 		var iframe = '<iframe src="' + url + '" frameborder="0" style="border:0;width:100%;height:98%;"></iframe>';
 		var t = $('#index_tabs');
 		console.log(t);
@@ -61,7 +61,7 @@
 	
 	//添加 new designer detail tabl
 	function addNewProjectTab() {
-		var url=webRootPath+"/projectController/addProject";
+		var url=webRootPath+"/designerController/addDesigner";
 		var iframe = '<iframe src="' + url + '" frameborder="0" style="border:0;width:100%;height:98%;"></iframe>';
 		var t = $('#index_tabs');
 		console.log(t);

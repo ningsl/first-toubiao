@@ -35,7 +35,7 @@ public class Designer {
 	
 	private int workingYears;
 	
-	private String department;
+	private String departmentName;
 	
 	private String school;
 	
@@ -146,12 +146,12 @@ public class Designer {
 		this.workingYears = workingYears;
 	}
 
-	public  String getDepartment() {
-		return department;
+	public  String getDepartmentName() {
+		return departmentName;
 	}
 
-	public void setDepartment(String department) {
-		this.department = department;
+	public void setDepartmentName(String departmentName) {
+		this.departmentName = departmentName;
 	}
 
 	public String getSchool() {
@@ -192,6 +192,19 @@ public class Designer {
 
 	public void setWorkDate(Date workDate) {
 		this.workDate = workDate;
+	}
+
+	@Override
+	public String toString() {
+		return "Designer [id=" + id + ", sn=" + sn + ", name=" + name
+				+ ", gender=" + gender + ", status=" + status + ", age=" + age
+				+ ", birthday=" + birthday + ", professionalTitle="
+				+ professionalTitle + ", schoolMajor=" + schoolMajor
+				+ ", distributedMajor=" + distributedMajor + ", workingMajor="
+				+ workingMajor + ", workingYears=" + workingYears
+				+ ", departmentName=" + departmentName + ", school=" + school
+				+ ", education=" + education + ", phone=" + phone
+				+ ", headship=" + headship + ", workDate=" + workDate + "]";
 	}
 	
 	/*private Set<Tproject> projectSet;*/

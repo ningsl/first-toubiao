@@ -221,17 +221,12 @@ public class ExcelUtils {
 	    	}
 	    	sheet1.autoSizeColumn(j);
 	    }
-	    	
 	    
 	    //保存文件
 	    FileOutputStream saveFile=new FileOutputStream(new File(saveAbsPath));
 	    
-	    
 	    workbook.write(saveFile);
 	    saveFile.close();
-		
-		//
-		
 	}
 	
 }

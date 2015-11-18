@@ -9,11 +9,13 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.DynamicUpdate;
 
+import toubiao.pageModel.Photo;
+
 @Entity
 @Table(name = "t_certificate_photo")
 @PrimaryKeyJoinColumn(name="id")
 @DynamicUpdate(true)
-public class TcertificatePhoto {
+public class TcertificatePhoto extends Tphoto{
 	private String certificateName;
 	private String certificateSn;
 	private Tdesigner designer;

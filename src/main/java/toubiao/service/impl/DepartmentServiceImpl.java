@@ -93,7 +93,7 @@ public class DepartmentServiceImpl implements DepartmentServiceI{
 					department.setId(designer.getDepartment().getId());
 					department.setName(designer.getDepartment().getName());
 					
-					designerPage.setDepartment(department.getName());
+					designerPage.setDepartmentName(department.getName());
 					
 					d.getDesignerList().add(designerPage);
 				}
@@ -138,7 +138,7 @@ public class DepartmentServiceImpl implements DepartmentServiceI{
 				Map<String, Object> attr2 = new HashMap<String, Object>();
 				attr2.put("id", designer.getId());
 				attr2.put("name", designer.getName());
-				attr2.put("department", designer.getDepartment());
+				attr2.put("department", designer.getDepartmentName());
 				attr2.put("phone", designer.getPhone());
 				attr2.put("treeId", t.getId());
 				t.setAttributes(attr2);

@@ -248,5 +248,19 @@ public class Tdesigner  {
 		this.certificatePhotoSet = certificatePhotoSet;
 	}
 
+	@Override
+	public String toString() {
+		return "Tdesigner [id=" + id + ", sn=" + sn + ", name=" + name
+				+ ", gender=" + gender + ", status=" + status + ", age=" + age
+				+ ", birthday=" + birthday +  ", professionalTitle="
+				+ professionalTitle + ", schoolMajor=" + schoolMajor
+				+ ", distributedMajor=" + distributedMajor + ", workingMajor="
+				+ workingMajor + ", workingYears=" + workingYears
+				+ ", department=" + department + ", school=" + school
+				+ ", education=" + education + ", phone=" + phone
+				+ ", headship=" + headship + ", workDate=" + workDate
+				+  "]";
+	}
+
 	
 }

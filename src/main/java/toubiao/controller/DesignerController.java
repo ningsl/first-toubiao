@@ -1,9 +1,17 @@
 package toubiao.controller;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -12,6 +20,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import toubiao.controller.untils.ControllerUtils;
 import toubiao.model.TcertificatePhoto;
 import toubiao.pageModel.CertificatePhoto;
 import toubiao.pageModel.DataGrid;
@@ -119,4 +128,154 @@ public class DesignerController {
 	public String addDesigner(){
 		return "/addDesigner";
 	}
+	
+	//下载Excle all
+	/**
+	 * @param request
+	 * @param response
+	 * @throws Exception
+	 */
+	@RequestMapping("/downloadExcelAll")
+	public void downloadExcelAll(HttpServletRequest request, HttpServletResponse response) throws Exception{
+		response.setContentType("text/html;charset=UTF-8");  
+        request.setCharacterEncoding("UTF-8");  
+        BufferedInputStream bis = null;  
+        BufferedOutputStream bos = null;  
+  
+        File downloadFile=new File(designerService.downloadeExcelOfAll());
+        SimpleDateFormat format=new SimpleDateFormat("yyMMdd");
+        String dateString=format.format(new Date());
+        String saveName="所有设计人员("+dateString+").xlsx";
+  
+        long fileLength = downloadFile.length();  
+  
+       
+        response.setHeader("Content-disposition", "attachment; filename="  
+                + new String(saveName.getBytes("utf-8"), "ISO8859-1"));  
+        response.setHeader("Content-Length", String.valueOf(fileLength));  
+  
+        bis = new BufferedInputStream(new FileInputStream(downloadFile));  
+        bos = new BufferedOutputStream(response.getOutputStream());  
+        byte[] buff = new byte[2048];  
+        int bytesRead;  
+        while (-1 != (bytesRead = bis.read(buff, 0, buff.length))) {  
+            bos.write(buff, 0, bytesRead);  
+        }  
+        bis.close();  
+        bos.close(); 
+	}
+	
+
+	//下载Excel checked
+	@RequestMapping("/downloadExcelChecked")
+	public void downloadExcelChecked(HttpServletRequest request, HttpServletResponse response,String ids) throws Exception{
+		if(ids==null){
+			return ;
+		}
+		String fileAbsPath=designerService.downloadeExcelChecked(ids);
+		SimpleDateFormat format=new SimpleDateFormat("yyMMdd");
+        String dateString=format.format(new Date());
+        String savedName="勾选项目("+dateString+").xlsx";
+        
+        ControllerUtils.downloadFile(fileAbsPath, savedName, request, response);
+	}
+	
+	//下载Excel checked
+	@RequestMapping("/downloadExcelFiltered")
+	public void downloadExcelFiltered(HttpServletRequest request, HttpServletResponse response) {
+		String conditionsJson=request.getParameter("conditionsJson");
+		if(conditionsJson==null || conditionsJson.equals("")){
+			conditionsJson="[]";
+		}
+		logger.debug(conditionsJson);
+		List<FilterCondition> conditionList = JSON.parseArray(conditionsJson,
+				FilterCondition.class);
+		logger.debug(conditionList.size());
+		
+		String fileAbsPath=null;
+		fileAbsPath = designerService.downloadExcelFiltered(conditionList);
+		logger.debug(fileAbsPath);
+		SimpleDateFormat format=new SimpleDateFormat("yyMMdd");
+        String dateString=format.format(new Date());
+        String savedName="筛选项目("+dateString+").xlsx";
+        
+        try {
+			ControllerUtils.downloadFile(fileAbsPath, savedName, request, response);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	//下载Excle all
+		@RequestMapping("/downloadDocxAll")
+		public void downloadDocxAll(HttpServletRequest request, HttpServletResponse response) throws Exception{
+			response.setContentType("text/html;charset=UTF-8");  
+	        request.setCharacterEncoding("UTF-8");  
+	        BufferedInputStream bis = null;  
+	        BufferedOutputStream bos = null;  
+	  
+	        File downloadFile=new File(designerService.downloadeDocxOfAll());
+	        SimpleDateFormat format=new SimpleDateFormat("yyMMdd");
+	        String dateString=format.format(new Date());
+	        String saveName="所有项目("+dateString+").zip";
+	  
+	        long fileLength = downloadFile.length();  
+	  
+	       
+	        response.setHeader("Content-disposition", "attachment; filename="  
+	                + new String(saveName.getBytes("utf-8"), "ISO8859-1"));  
+	        response.setHeader("Content-Length", String.valueOf(fileLength));  
+	  
+	        bis = new BufferedInputStream(new FileInputStream(downloadFile));  
+	        bos = new BufferedOutputStream(response.getOutputStream());  
+	        byte[] buff = new byte[2048];  
+	        int bytesRead;  
+	        while (-1 != (bytesRead = bis.read(buff, 0, buff.length))) {  
+	            bos.write(buff, 0, bytesRead);  
+	        }  
+	        bis.close();  
+	        bos.close(); 
+		}
+		
+		//下载Excel checked
+		@RequestMapping("/downloadDocxChecked")
+		public void downloadDocxChecked(HttpServletRequest request, HttpServletResponse response,String ids) throws Exception{
+			if(ids==null){
+				return ;
+			}
+			String fileAbsPath=designerService.downloadDocxChecked(ids);
+			SimpleDateFormat format=new SimpleDateFormat("yyMMdd");
+	        String dateString=format.format(new Date());
+	        String savedName="勾选项目("+dateString+").zip";
+	        
+	        ControllerUtils.downloadFile(fileAbsPath, savedName, request, response);
+		}
+		
+		//下载Excel checked
+		@RequestMapping("/downloadDocxFiltered")
+		public void downloadDocxFiltered(HttpServletRequest request, HttpServletResponse response) {
+			String conditionsJson=request.getParameter("conditionsJson");
+			if(conditionsJson==null || conditionsJson.equals("")){
+				conditionsJson="[]";
+			}
+			logger.debug(conditionsJson);
+			List<FilterCondition> conditionList = JSON.parseArray(conditionsJson,
+					FilterCondition.class);
+			logger.debug(conditionList.size());
+			
+			String fileAbsPath=null;
+			fileAbsPath = designerService.downloadDocxFiltered(conditionList);
+			logger.debug(fileAbsPath);
+			SimpleDateFormat format=new SimpleDateFormat("yyMMdd");
+	        String dateString=format.format(new Date());
+	        String savedName="筛选项目("+dateString+").zip";
+	        
+	        try {
+				ControllerUtils.downloadFile(fileAbsPath, savedName, request, response);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 }
