@@ -1,0 +1,43 @@
+/* Effective stylesheet produced by snapshot save */
+body { margin: 0px; padding: 0px; font-size: 12px; line-height: 22px; font-family: "Arial","微软雅黑","Tahoma","Verdana","SimSun"; color: rgb(37, 37, 37); height: 100%; overflow-x: hidden; }
+td, p, div, a, form { margin: 0px; padding: 0px; }
+ul, li, dl, dt, dd { margin: 0px; padding: 0px; list-style: outside none none; color: rgb(37, 37, 37); }
+input, select, textarea, button { margin: 0px; padding: 0px; font-size: 12px; font-family: "微软雅黑","Arial","Tahoma","Verdana","SimSun"; color: rgb(37, 37, 37); outline: medium none; }
+h1, h2, h3, h4, h5, h6 { margin: 0px; padding: 0px; font-family: "微软雅黑","Arial","Tahoma","Verdana","SimSun"; color: rgb(37, 37, 37); }
+img { vertical-align: top; }
+a { color: rgb(37, 37, 37); text-decoration: none; }
+a:hover { color: rgb(246, 148, 30); text-decoration: none; }
+.clearfix::after { visibility: hidden; display: block; font-size: 0px; content: "."; clear: both; height: 0px; }
+.pl10 { padding-left: 5px; }
+.pl15 { padding-left: 15px; }
+.mt6 { margin-top: 6px; }
+a.prs_btn_green { cursor: pointer; background: transparent url("btn_green.png") no-repeat scroll 0px 0px; padding-left: 5px; float: left; }
+a.prs_btn_green span { background: transparent url("btn_green.png") no-repeat scroll right -26px; padding: 0px 5px 0px 0px; height: 26px; line-height: 26px; min-width: 52px; text-align: center; float: left; color: rgb(19, 19, 19); }
+a.prs_btn_green:hover { background: transparent url("btn_green.png") no-repeat scroll 0px -52px; cursor: pointer; text-decoration: none; }
+a.prs_btn_green:hover span { background: transparent url("btn_green.png") no-repeat scroll right -78px; }
+.prs_login_body { background: transparent url("bg.png") repeat scroll 0% 0%; }
+.prs_login_main { background: transparent url("login_body_bg.png") no-repeat scroll center top; text-align: center; min-height: 346px; }
+.prs_login_logo { text-align: center; }
+.prs_login_logo h1 { background: transparent url("yicr-logo.png") no-repeat scroll 0% 0%; width: 316px; height: 47px; display: inline-block; }
+.prs_login_box { background: transparent none repeat scroll 0% 0%; width: 518px; display: inline-block; }
+.prs_login_box_t { width: 518px; height: 16px; background: transparent url("login_box_t.png") no-repeat scroll 0% 0%; }
+.prs_login_box_m { width: 518px; background: transparent url("login_box_m.png") repeat-y scroll 0% 0%; }
+.prs_login_box_b { width: 518px; height: 24px; background: transparent url("login_box_b.png") no-repeat scroll 0% 0%; }
+.prs_login_box dl { height: 45px; }
+.prs_login_box dl dt { float: left; padding-left: 17px; padding-top: 6px; }
+.prs_login_box dl dd { float: left; padding-left: 10px; padding-top: 5px; }
+.prs_login_list { padding-top: 38px; margin-left: 76px; margin-right: 65px; }
+.prs_login_list dl dt { line-height: 33px; width: 90px; white-space: nowrap; text-align: right; }
+.prs_login_inp { background: transparent url("login_inp.png") no-repeat scroll 0% 0%; width: 245px; height: 33px; display: inline-block; }
+.prs_login_inp input { width: 235px; padding-left: 5px; border: medium none; background: transparent none repeat scroll 0% 0%; height: 16px; line-height: 16px; padding-top: 8px; }
+.prs_login_inp_code { background: transparent url("login_inp_code.png") no-repeat scroll 0% 0%; width: 125px; height: 33px; display: inline-block; }
+.prs_login_inp_code input { width: 125px; padding-left: 5px; border: medium none; background: transparent none repeat scroll 0% 0%; height: 16px; line-height: 16px; padding-top: 8px; }
+a.rco { background: transparent url("rco.png") no-repeat scroll 0% 0%; width: 24px; height: 24px; display: inline-block; }
+.prs_login_copyright { color: rgb(63, 63, 63); padding-top: 40px; }
+.prs_inline_block { display: inline-block; vertical-align: middle; }
+.prs_login_info_box { text-align: left; padding-left: 35px; min-height: 25px; }
+.prs_login_info { color: red; }
+.prs_login_recommend { color: rgb(63, 63, 63); }
+.prs_task_pbox_b_stat::after { background: rgb(248, 248, 248) none repeat scroll 0px 0px; content: ""; height: 1px; left: 0px; position: absolute; top: 0px; width: 100%; }
+:-moz-placeholder { color: rgb(128, 128, 128); }
+*::-moz-placeholder { color: rgb(128, 128, 128); }

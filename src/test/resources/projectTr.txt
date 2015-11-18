@@ -1,0 +1,276 @@
+<w:tr w:rsidRPr="00867ED4" w:rsidR="00896E67" w:rsidTr="00DA3184" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:ns21="urn:schemas-microsoft-com:office:powerpoint" xmlns:ns23="http://schemas.microsoft.com/office/2006/coverPageProps" xmlns:dsp="http://schemas.microsoft.com/office/drawing/2008/diagram" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:odx="http://opendope.org/xpaths" xmlns:odgm="http://opendope.org/SmartArt/DataHierarchy" xmlns:dgm="http://schemas.openxmlformats.org/drawingml/2006/diagram" xmlns:c="http://schemas.openxmlformats.org/drawingml/2006/chart" xmlns:odi="http://opendope.org/components" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:ns19="urn:schemas-microsoft-com:office:excel" xmlns:ns9="http://schemas.openxmlformats.org/schemaLibrary/2006/main" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:ns32="http://schemas.openxmlformats.org/drawingml/2006/lockedCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture" xmlns:ns30="http://schemas.openxmlformats.org/officeDocument/2006/bibliography" xmlns:ns12="http://schemas.openxmlformats.org/drawingml/2006/chartDrawing" xmlns:ns31="http://schemas.openxmlformats.org/drawingml/2006/compatibility" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:odq="http://opendope.org/questions" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:xdr="http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing" xmlns:odc="http://opendope.org/conditions" xmlns:oda="http://opendope.org/answers">
+    <w:trPr>
+        <w:trHeight w:val="270"/>
+    </w:trPr>
+    <w:tc>
+        <w:tcPr>
+            <w:tcW w:w="704" w:type="dxa"/>
+            <w:tcBorders>
+                <w:top w:val="nil"/>
+                <w:left w:val="single" w:color="auto" w:sz="4" w:space="0"/>
+                <w:bottom w:val="single" w:color="auto" w:sz="4" w:space="0"/>
+                <w:right w:val="single" w:color="auto" w:sz="4" w:space="0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+        </w:tcPr>
+        <w:p w:rsidRPr="00867ED4" w:rsidR="004C1F35" w:rsidP="004C1F35" w:rsidRDefault="00896E67">
+            <w:pPr>
+                <w:widowControl/>
+                <w:jc w:val="center"/>
+                <w:rPr>
+                    <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/>
+                    <w:color w:val="000000"/>
+                    <w:kern w:val="0"/>
+                    <w:sz w:val="18"/>
+                    <w:szCs w:val="18"/>
+                </w:rPr>
+            </w:pPr>
+            <w:proofErr w:type="spellStart"/>
+            <w:r>
+                <w:rPr>
+                    <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/>
+                    <w:color w:val="000000"/>
+                    <w:kern w:val="0"/>
+                    <w:sz w:val="18"/>
+                    <w:szCs w:val="18"/>
+                </w:rPr>
+                <w:t>${i?default('')}</w:t>
+            </w:r>
+            <w:proofErr w:type="spellEnd"/>
+        </w:p>
+    </w:tc>
+    <w:tc>
+        <w:tcPr>
+            <w:tcW w:w="4111" w:type="dxa"/>
+            <w:tcBorders>
+                <w:top w:val="nil"/>
+                <w:left w:val="nil"/>
+                <w:bottom w:val="single" w:color="auto" w:sz="4" w:space="0"/>
+                <w:right w:val="single" w:color="auto" w:sz="4" w:space="0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+        </w:tcPr>
+        <w:p w:rsidRPr="00867ED4" w:rsidR="004C1F35" w:rsidP="004C1F35" w:rsidRDefault="00896E67">
+            <w:pPr>
+                <w:widowControl/>
+                <w:jc w:val="center"/>
+                <w:rPr>
+                    <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/>
+                    <w:color w:val="000000"/>
+                    <w:kern w:val="0"/>
+                    <w:sz w:val="18"/>
+                    <w:szCs w:val="18"/>
+                </w:rPr>
+            </w:pPr>
+            <w:proofErr w:type="spellStart"/>
+            <w:r>
+                <w:rPr>
+                    <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/>
+                    <w:color w:val="000000"/>
+                    <w:kern w:val="0"/>
+                    <w:sz w:val="18"/>
+                    <w:szCs w:val="18"/>
+                </w:rPr>
+                <w:t>${p.projectName?default('')}</w:t>
+            </w:r>
+            <w:proofErr w:type="spellEnd"/>
+        </w:p>
+    </w:tc>
+    <w:tc>
+        <w:tcPr>
+            <w:tcW w:w="1276" w:type="dxa"/>
+            <w:tcBorders>
+                <w:top w:val="nil"/>
+                <w:left w:val="nil"/>
+                <w:bottom w:val="single" w:color="auto" w:sz="4" w:space="0"/>
+                <w:right w:val="single" w:color="auto" w:sz="4" w:space="0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+        </w:tcPr>
+        <w:p w:rsidRPr="00867ED4" w:rsidR="004C1F35" w:rsidP="004C1F35" w:rsidRDefault="00896E67">
+            <w:pPr>
+                <w:widowControl/>
+                <w:jc w:val="center"/>
+                <w:rPr>
+                    <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/>
+                    <w:color w:val="000000"/>
+                    <w:kern w:val="0"/>
+                    <w:sz w:val="18"/>
+                    <w:szCs w:val="18"/>
+                </w:rPr>
+            </w:pPr>
+            <w:r>
+                <w:rPr>
+                    <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/>
+                    <w:color w:val="000000"/>
+                    <w:kern w:val="0"/>
+                    <w:sz w:val="18"/>
+                    <w:szCs w:val="18"/>
+                </w:rPr>
+                <w:t>${(p.date?string("yyyy年"))!}</w:t>
+            </w:r>
+        </w:p>
+    </w:tc>
+    <w:tc>
+        <w:tcPr>
+            <w:tcW w:w="1559" w:type="dxa"/>
+            <w:tcBorders>
+                <w:top w:val="nil"/>
+                <w:left w:val="nil"/>
+                <w:bottom w:val="single" w:color="auto" w:sz="4" w:space="0"/>
+                <w:right w:val="single" w:color="auto" w:sz="4" w:space="0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+        </w:tcPr>
+        <w:p w:rsidRPr="00867ED4" w:rsidR="004C1F35" w:rsidP="004C1F35" w:rsidRDefault="00896E67">
+            <w:pPr>
+                <w:widowControl/>
+                <w:jc w:val="center"/>
+                <w:rPr>
+                    <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/>
+                    <w:color w:val="000000"/>
+                    <w:kern w:val="0"/>
+                    <w:sz w:val="18"/>
+                    <w:szCs w:val="18"/>
+                </w:rPr>
+            </w:pPr>
+            <w:proofErr w:type="spellStart"/>
+            <w:r>
+                <w:rPr>
+                    <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/>
+                    <w:color w:val="000000"/>
+                    <w:kern w:val="0"/>
+                    <w:sz w:val="18"/>
+                    <w:szCs w:val="18"/>
+                </w:rPr>
+                <w:t>${p.investAmount?default('')}</w:t>
+            </w:r>
+            <w:proofErr w:type="spellEnd"/>
+        </w:p>
+    </w:tc>
+    <w:tc>
+        <w:tcPr>
+            <w:tcW w:w="3118" w:type="dxa"/>
+            <w:tcBorders>
+                <w:top w:val="nil"/>
+                <w:left w:val="nil"/>
+                <w:bottom w:val="single" w:color="auto" w:sz="4" w:space="0"/>
+                <w:right w:val="single" w:color="auto" w:sz="4" w:space="0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+        </w:tcPr>
+        <w:p w:rsidRPr="00867ED4" w:rsidR="004C1F35" w:rsidP="004C1F35" w:rsidRDefault="00896E67">
+            <w:pPr>
+                <w:widowControl/>
+                <w:jc w:val="center"/>
+                <w:rPr>
+                    <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/>
+                    <w:color w:val="000000"/>
+                    <w:kern w:val="0"/>
+                    <w:sz w:val="18"/>
+                    <w:szCs w:val="18"/>
+                </w:rPr>
+            </w:pPr>
+            <w:proofErr w:type="spellStart"/>
+            <w:r>
+                <w:rPr>
+                    <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/>
+                    <w:color w:val="000000"/>
+                    <w:kern w:val="0"/>
+                    <w:sz w:val="18"/>
+                    <w:szCs w:val="18"/>
+                </w:rPr>
+                <w:t>${p.partA?default('')}</w:t>
+            </w:r>
+            <w:proofErr w:type="spellEnd"/>
+        </w:p>
+    </w:tc>
+    <w:tc>
+        <w:tcPr>
+            <w:tcW w:w="1276" w:type="dxa"/>
+            <w:tcBorders>
+                <w:top w:val="nil"/>
+                <w:left w:val="nil"/>
+                <w:bottom w:val="single" w:color="auto" w:sz="4" w:space="0"/>
+                <w:right w:val="single" w:color="auto" w:sz="4" w:space="0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+        </w:tcPr>
+        <w:p w:rsidRPr="00867ED4" w:rsidR="004C1F35" w:rsidP="004C1F35" w:rsidRDefault="00896E67">
+            <w:pPr>
+                <w:widowControl/>
+                <w:jc w:val="center"/>
+                <w:rPr>
+                    <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/>
+                    <w:color w:val="000000"/>
+                    <w:kern w:val="0"/>
+                    <w:sz w:val="18"/>
+                    <w:szCs w:val="18"/>
+                </w:rPr>
+            </w:pPr>
+            <w:proofErr w:type="spellStart"/>
+            <w:r>
+                <w:rPr>
+                    <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/>
+                    <w:color w:val="000000"/>
+                    <w:kern w:val="0"/>
+                    <w:sz w:val="18"/>
+                    <w:szCs w:val="18"/>
+                </w:rPr>
+                <w:t>${p.contactName?default('')}</w:t>
+            </w:r>
+            <w:proofErr w:type="spellEnd"/>
+        </w:p>
+    </w:tc>
+    <w:tc>
+        <w:tcPr>
+            <w:tcW w:w="1904" w:type="dxa"/>
+            <w:tcBorders>
+                <w:top w:val="nil"/>
+                <w:left w:val="nil"/>
+                <w:bottom w:val="single" w:color="auto" w:sz="4" w:space="0"/>
+                <w:right w:val="single" w:color="auto" w:sz="4" w:space="0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+        </w:tcPr>
+        <w:p w:rsidRPr="00867ED4" w:rsidR="004C1F35" w:rsidP="00896E67" w:rsidRDefault="004C1F35">
+            <w:pPr>
+                <w:widowControl/>
+                <w:jc w:val="center"/>
+                <w:rPr>
+                    <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/>
+                    <w:color w:val="000000"/>
+                    <w:kern w:val="0"/>
+                    <w:sz w:val="18"/>
+                    <w:szCs w:val="18"/>
+                </w:rPr>
+            </w:pPr>
+            <w:proofErr w:type="spellStart"/>
+            <w:r w:rsidRPr="004C1F35">
+                <w:rPr>
+                    <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/>
+                    <w:color w:val="000000"/>
+                    <w:kern w:val="0"/>
+                    <w:sz w:val="18"/>
+                    <w:szCs w:val="18"/>
+                </w:rPr>
+                <w:t>${p.contactPhone?default('')}</w:t>
+            </w:r>
+            <w:proofErr w:type="spellEnd"/>
+        </w:p>
+    </w:tc>
+</w:tr>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+	<web-class name="project">
+		<field name="designerNames">
+			<model-class name="designer">
+			</model-class>
+			<model-field name="name" filter-operator="equal" type="string">
+			</model-field>
+		</field>
+		<field name="departmentNames">
+			<model-class name="department">
+			</model-class>
+			<model-field name="name" filter-operator="equal" type="string">
+			</model-field>
+		</field>
+		<field name="classByImportance">
+			<model-class name="project">
+			</model-class>
+			<model-field name="classByImportance" filter-operator="equal" type="string">
+			</model-field>
+		</field>
+	</web-class>
+</dictionary>
